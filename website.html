@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Educational Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(194, 174, 194);
+        }
+
+        header {
+            background-color: #c7d497;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Educational Website</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Log In</a>
+        <a href="submit.html">Submit</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <!-- Content of your Home page goes here -->
+        <h2>Welcome to my Educational Website!</h2>
+        <p>This is the home page content.</p>
+    </section>
+
+    <section>
+        <!-- Placeholder for Registration form -->
+        <h2>Register</h2>
+        <p>Create an account to access exclusive content.</p>
+        <form action="register_process.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section>
+        <!-- Placeholder for Log In form -->
+        <h2>Log In</h2>
+        <p>Already have an account? Log in here.</p>
+        <form action="login_process.php" method="post">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+
+            <button type="submit">Log In</button>
+        </form>
+    </section>
+
+    <section>
+        <!-- Placeholder for Submission form -->
+        <h2>Submit</h2>
+        <p>Submit your assignments or contributions here.</p>
+        <form action="submit_process.php" method="post">
+            <label for="submission">Your Submission:</label>
+            <textarea id="submission" name="submission" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section>
+        <!-- Content of your Home page goes here -->
+        <h2>About</h2>
+        <br/>
+        <p>In the formal sense, this educational is intended for the structure learning.<br/>
+            From children and adults, students receive their <br/>
+            education mainly through classroom instruction.<br/> </p>
+    </section>
+    <section>
+        <!-- Content of your Home page goes here -->
+        <h2>Contact Us</h2>
+        <br/>
+        <form action="register_process.php" method="post">
+            <label for="Name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="emailaddress">Email :</label>
+            <input type="email" id="email" name="email" required> <br/>
+            <br/>
+            <label for="myCheckbox">I accept the terms of Service:</label>
+            <input type="checkbox" id="myCheckbox" name="myCheckbox">
+            <br/>
+            <br/>
+            <button type="submit">Submit</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Educational Website</p>
+    </footer>
+
+</body>
+</html>
